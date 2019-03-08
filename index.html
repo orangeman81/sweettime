@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweet Time</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="mainHeader">
+        <nav id="mainNavbar">
+            <a [routerLink]="['/main']" routerLinkActive="active"><i class="material-icons tile-icon">home</i></a>
+            <ul *ngIf="isLoggedIn$ | async">
+                <li>
+                    <a><i class="material-icons tile-icon">get_app</i></a>
+                </li>
+                <li>
+                    <a><i class="material-icons tile-icon">store</i></a>
+                </li>
+                <li>
+                    <a><i class="material-icons tile-icon">people</i></a>
+                </li>
+                <li>
+                    <a><i class="material-icons tile-icon">import_export</i></a>
+                </li>
+            </ul>
+        </nav>
+        <video crossorigin="anonymous" poster="https://fast.wistia.com/assets/images/blank.gif"
+            src="blob:https://www.montecarlosbm.com/0406025c-f83d-4ea8-a5d8-d649a51731b3"></video>
+        <div class="container">
+            <h1>Main Header</h1>
+        </div>
+    </header>
+    <main></main>
+    <section></section>
+    <footer></footer>
+</body>
+
+</html>
