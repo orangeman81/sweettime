@@ -7,36 +7,192 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sweet Time</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header id="mainHeader">
         <nav id="mainNavbar">
-            <a [routerLink]="['/main']" routerLinkActive="active"><i class="material-icons tile-icon">home</i></a>
-            <ul *ngIf="isLoggedIn$ | async">
+            <ul>
                 <li>
-                    <a><i class="material-icons tile-icon">get_app</i></a>
+                    <a>home</a>
                 </li>
                 <li>
-                    <a><i class="material-icons tile-icon">store</i></a>
+                    <a>camere</a>
+                </li>
+                <li><img src="assets/logo.svg" alt=""></li>
+                <li>
+                    <a>gallery</a>
                 </li>
                 <li>
-                    <a><i class="material-icons tile-icon">people</i></a>
-                </li>
-                <li>
-                    <a><i class="material-icons tile-icon">import_export</i></a>
+                    <a>contatti</a>
                 </li>
             </ul>
         </nav>
-        <video crossorigin="anonymous" poster="https://fast.wistia.com/assets/images/blank.gif"
-            src="blob:https://www.montecarlosbm.com/0406025c-f83d-4ea8-a5d8-d649a51731b3"></video>
-        <div class="container">
-            <h1>Main Header</h1>
+        <video crossorigin="anonymous" poster="assets/hero_img.jpg" src="assets/hero.mp4" autoplay loop></video>
+        <div class="content">
+            <h1>Suite Time</h1>
+            <p>Ospitalità autentica</p>
+            <button>prenota</button>
         </div>
+        <img class="squares" src="assets/rombs.svg" alt="">
     </header>
-    <main></main>
-    <section></section>
-    <footer></footer>
+    <main class="container">
+        <p class="title mt-72 w-6">
+            <strong>Valorizziamo</strong> i tuoi momenti di svago con tutta l’attenzione
+            che questi preziosi momenti <strong>meritano</strong>
+        </p>
+        <div class="row mt-64">
+            <div class="col m4 s12" data-aos="fade-right">
+                <article class="card">
+                    <figure>
+                        <img src="assets/hearth.svg" alt="">
+                    </figure>
+                    <div class="content">
+                        <h5>
+                            Storia
+                        </h5>
+                        <p>Dimora storica ottocentesca con pavimenti
+                            in maiolica
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="col m4 s12" data-aos="fade-up">
+                <article class="card">
+                    <figure>
+                        <img src="assets/pin.svg" alt="">
+                    </figure>
+                    <div class="content">
+                        <h5>
+                            Location
+                        </h5>
+                        <p>
+                            I maggiori luoghi di interesse di Capri
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="col m4 s12" data-aos="fade-left">
+                <article class="card">
+                    <figure>
+                        <img src="assets/panorama.svg" alt="">
+                    </figure>
+                    <div class="content">
+                        <h5>
+                            Panorama
+                        </h5>
+                        <p>
+                            Vista mozzafiato, immersi in uno splendido giardino
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <section class="container">
+        <header>
+            <h2>LA PERGOLA E SUITE GARDEN</h2>
+            <p>Suitetime Villa la pergola, costruita agli inizi dell’800 e rinnovata completamente di recente, conserva
+                i tratti tipici delle tipiche ville di Capri.</p>
+        </header>
+        <div class="slide" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+            <figure class="col m8 s12" data-aos="fade-up">
+                <img src="assets/slide_1.jpg" class="res" itemprop="photo" alt="la pergola">
+            </figure>
+            <div class="col m4 s12" data-aos="fade-left">
+                <article class="card">
+                    <p itemprop="description">I soffitti a volta e le infinite sfumature di azzurro e turchese donano
+                        un’atmosfera tutta
+                        caprese ad ogni singolo angolo della villa.</p>
+                </article>
+            </div>
+        </div>
+        <div class="slide" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+            <div class="col m4 s12" data-aos="fade-up">
+                <article class="card">
+                    <p itemprop="description">Le camere e le suite sono tutte indipendenti e dotate di ogni comfort con
+                        libero accesso ai
+                        terrazzi dai quali è possibile godere di un panorama mozzafiato sul meraviglioso golfo
+                        di Napoli.</p>
+                </article>
+            </div>
+            <figure class="col m8 s12" data-aos="fade-left">
+                <img src="assets/slide_2.jpg" class="res" itemprop="photo" alt="la Pergola">
+            </figure>
+        </div>
+        <div class="slide" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+            <figure class="col m8 s12" data-aos="fade-up">
+                <img src="assets/slide_3.jpg" class="res" itemprop="photo" alt="la Pergola">
+            </figure>
+            <div class="col m4 s12" data-aos="fade-left">
+                <article class="card">
+                    <p itemprop="description">La prima colazione è servita nel giardino adiacente per rendere unico e
+                        speciale il
+                        vostro risveglio.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <header>
+            <h2>gallery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae ab voluptatum minus, eius libero in
+                deleniti.</p>
+        </header>
+        <div class="gallery" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+            <figure class="g1" data-aos="fade-down">
+                <img src="assets/g-1.jpg" itemprop="photo" alt="">
+                <span>Corridoio</span>
+            </figure>
+            <figure class="g2" data-aos="fade-up">
+                <img src="assets/g-2.jpg" itemprop="photo" alt="">
+                <span>Giardino</span>
+            </figure>
+            <figure class="g3" data-aos="fade-down">
+                <img src="assets/g-3.jpg" itemprop="photo" alt="">
+                <span>Veranda</span>
+            </figure>
+            <figure class="g4" data-aos="fade-up">
+                <img src="assets/g-4.jpg" itemprop="photo" alt="">
+                <span>Scale</span>
+            </figure>
+            <figure class="g5" data-aos="fade-right">
+                <img src="assets/g-5.jpg" itemprop="photo" alt="">
+                <span>Living</span>
+            </figure>
+            <figure class="g6" data-aos="fade-up">
+                <img src="assets/g-6.jpg" itemprop="photo" alt="">
+                <span>Piazzetta</span>
+            </figure>
+            <figure class="g7" data-aos="fade-left">
+                <img src="assets/g-7.jpg" itemprop="photo" alt="">
+                <span>Balconata</span>
+            </figure>
+        </div>
+    </section>
+    <section class="container">
+        <header>
+            <h2>dove siamo</h2>
+        </header>
+        <figure>
+            <img src="assets/map&legend.png" class="res" alt="">
+        </figure>
+    </section>
+    <footer id="mainFooter">
+        <img src="assets/footer_logo.svg" alt="">
+        <address>
+            081 18544028 -info@suitetime.house<br>
+            Via Provinciale Anacapri 7 "Due Golfi" 80076 Capri (NA)
+        </address>
+    </footer>
+
+    <!-- app -->
+    <script src="app/ui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

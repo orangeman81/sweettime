@@ -3,11 +3,13 @@
     max-width: 1280px;
     margin: 0 auto;
     width: 90%;
+
     @media screen and (min-width: $tablet) {
         width: 85%;
     }
+
     @media screen and (min-width: $desktop) {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -17,41 +19,138 @@
     flex-wrap: wrap;
     margin: .5rem -.5rem;
     $i: 1;
+
     .col {
         padding: .5rem;
         box-sizing: border-box;
+
         @while $i <=$columns {
             $perc: unquote((100 / ($columns / $i)) + "%");
+
             &.s#{$i} {
                 flex: 1 0 $perc;
                 @extend .fw;
             }
+
             $i: $i+1;
         }
+
         @media screen and (min-width: $laptop) {
             $i: 1;
+
             @while $i <=$columns {
                 $perc: unquote((100 / ($columns / $i)) + "%");
+
                 &.m#{$i} {
                     flex: 0 1 $perc;
                 }
+
                 $i: $i+1;
             }
         }
+
         @media screen and (min-width: $desktop) {
             $i: 1;
+
             @while $i <=$columns {
                 $perc: unquote((100 / ($columns / $i)) + "%");
+
                 &.l#{$i} {
                     flex: 0 1 $perc;
                 }
+
                 $i: $i+1;
             }
         }
     }
+
     .fw {
         @media screen and (max-width: $mobile) {
             flex-basis: 100%;
         }
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-areas:
+        'g1 g1 g2 g2 g2 g3 g3 g4 g4 g7 g7 g7'
+        'g5 g5 g5 g6 g6 g6 g6 g6 g6 g7 g7 g7';
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+
+    @media screen and (max-width: $tablet) {
+        grid-template-areas:
+            'g1 g1 g1 g1 g1 g2 g2 g2 g2 g2 g2 g2'
+            'g3 g3 g3 g3 g4 g4 g4 g4 g5 g5 g5 g5'
+            'g7 g7 g7 g7 g7 g7 g7 g6 g6 g6 g6 g6';
+    }
+
+    figure {
+        max-height: 260px;
+
+        &:last-child {
+            @media screen and (min-width: $tablet + 1) {
+                max-height: 540px
+            }
+        }
+
+        position: relative;
+        overflow: hidden;
+
+        img {
+            height: 100%
+        }
+
+        span {
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all .3s ease;
+            background: rgba($color, .8);
+            font-family: 'Josefin Sans', sans-serif;
+            color: $off-white;
+            font-size: 30px;
+            text-decoration: underline;
+            text-decoration-color: $secondary;
+
+            &:hover {
+                opacity: 1
+            }
+        }
+    }
+
+    .g1 {
+        grid-area: g1;
+    }
+
+    .g2 {
+        grid-area: g2;
+    }
+
+    .g3 {
+        grid-area: g3;
+    }
+
+    .g4 {
+        grid-area: g4;
+    }
+
+    .g5 {
+        grid-area: g5;
+    }
+
+    .g6 {
+        grid-area: g6;
+    }
+
+    .g7 {
+        grid-area: g7;
     }
 }

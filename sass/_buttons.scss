@@ -1,6 +1,5 @@
 .btn-default {
-    font-family: inherit;
-    font-weight: $medium;
+    font-weight: $light;
     text-transform: uppercase;
     overflow: hidden;
     outline: none;
@@ -16,19 +15,18 @@ button,
 .btn {
     @extend .btn-default;
     transition: all .3s ease;
-    border: 2px solid $gray;
+    border: 2px solid $secondary;
     background: transparent;
     will-change: border-color, color;
     border-radius: 2px;
-    color: $gray;
+    color: $off-white;
     margin: 0;
-    padding: 8px 16px;
-    font-size: 14px;
-    letter-spacing: .5px;
+    padding: 16px 40px;
+    font-size: 24px;
+    letter-spacing: 6px;
     line-height: 1em;
     &:hover {
-        border-color: $color;
-        color: $color
+        border-color: $off-white
     }
     &[disabled] {
         color: rgba(0, 0, 0, .26);

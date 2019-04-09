@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $off-white;
+    padding: 24px;
+    min-height: 172px;
+    box-sizing: border-box;
+
+    figure {
+        flex-grow: 1;
+        padding-right: 16px
+    }
+
+    .content {
+        font-size: 22px;
+        flex-grow: 3
+    }
+}

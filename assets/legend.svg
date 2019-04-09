@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="321" height="426" viewBox="0 0 321 426">
+  <g id="legend" transform="translate(-1359 -4290)">
+    <text id="MARINA_PICCOLA" data-name="MARINA PICCOLA" transform="translate(1403 4391)" fill="#08376c" font-size="26" font-family="JosefinSans-Regular, Josefin Sans"><tspan x="0" y="20">MARINA PICCOLA</tspan></text>
+    <text id="_500m_-_5_minuti_a_piedi" data-name="500m - 5 minuti a piedi" transform="translate(1403 4418)" fill="#727272" font-size="22" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="22">500m - 5 minuti a piedi</tspan></text>
+    <text id="_600m_-_7_minuti_a_piedi" data-name="600m - 7 minuti a piedi" transform="translate(1403 4557)" fill="#727272" font-size="22" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="22">600m - 7 minuti a piedi</tspan></text>
+    <text id="_1_4km_-_20_minuti_a_piedi" data-name="1,4km - 20 minuti a piedi" transform="translate(1403 4688)" fill="#727272" font-size="22" font-family="PTSans-Regular, PT Sans"><tspan x="0" y="22">1,4km - 20 minuti a piedi</tspan></text>
+    <text id="MARINA_GRANDE" data-name="MARINA GRANDE" transform="translate(1403 4662)" fill="#08376c" font-size="26" font-family="JosefinSans-Regular, Josefin Sans"><tspan x="0" y="20">MARINA GRANDE</tspan></text>
+    <text id="PIAZZETTA" transform="translate(1403 4531)" fill="#08376c" font-size="26" font-family="JosefinSans-Regular, Josefin Sans"><tspan x="0" y="20">PIAZZETTA</tspan></text>
+    <path id="Path_75" data-name="Path 75" d="M-4563.062,5969.227v370.149" transform="translate(5938 -1646)" fill="none" stroke="#08376c" stroke-width="2" stroke-dasharray="7"/>
+    <g id="noun_Location_2369433" transform="translate(1355 4290)">
+      <g id="_10-location" data-name="10-location" transform="translate(4)">
+        <path id="Path_46" data-name="Path 46" d="M19.938,42.5a1.328,1.328,0,0,1-.837-.305C18.477,41.69,4,29.684,4,15.937a15.938,15.938,0,0,1,31.875,0c0,13.746-14.477,25.752-15.1,26.257A1.328,1.328,0,0,1,19.938,42.5Z" transform="translate(-4)" fill="#c4ab85"/>
+        <path id="Path_74" data-name="Path 74" d="M17.969,21.937a7.969,7.969,0,1,1,7.969-7.969A7.969,7.969,0,0,1,17.969,21.937Zm0-13.281a5.313,5.313,0,1,0,5.313,5.312A5.313,5.313,0,0,0,17.969,8.656Z" transform="translate(-2.031 1.969)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1368 4408)" fill="#c4ab85" stroke="#f2f2f2" stroke-width="5">
+      <circle cx="7" cy="7" r="7" stroke="none"/>
+      <circle cx="7" cy="7" r="9.5" fill="none"/>
+    </g>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(1368 4548.236)" fill="#c4ab85" stroke="#f2f2f2" stroke-width="5">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="9" fill="none"/>
+    </g>
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(1368 4685.967)" fill="#c4ab85" stroke="#f2f2f2" stroke-width="5">
+      <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+      <circle cx="6.5" cy="6.5" r="9" fill="none"/>
+    </g>
+  </g>
+</svg>

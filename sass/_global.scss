@@ -7,6 +7,7 @@ figure {
 ul {
     padding: 0;
     margin: 0;
+
     li {
         list-style: none;
     }
@@ -14,17 +15,13 @@ ul {
 
 // body background-color
 body {
-    background-color: $bodyGray;
-}
-
-// layout min-height fix
-main {
-    min-height: calc(100vh - 232px);
+    background-color: $bodyGray
 }
 
 // images
 img.res {
-    max-width: 100%
+    max-width: 100%;
+    object-fit: cover
 }
 
 // ui elements
@@ -32,12 +29,14 @@ img.res {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+
     a,
     button {
         &:hover {
             animation: emphasis .4s both ease-out
         }
     }
+
     a:not(:last-child),
     button:not(:last-child) {
         margin-right: 16px

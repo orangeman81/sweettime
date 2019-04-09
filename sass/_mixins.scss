@@ -1,38 +1,46 @@
 //spacing
-$space-values : (
-  0,
-  4,
-  8,
-  16,
-  24,
-  32,
-  40,
-  48,
-  56,
-  64,
-  72
-) !default;
+$space-values : (0,
+4,
+8,
+16,
+24,
+32,
+40,
+48,
+56,
+64,
+72) !default;
 
 // margin and padding shorthands
-$space-prefixes : (
-  p  : padding,
-  pt : padding-top,
-  pr : padding-right,
-  pb : padding-bottom,
-  pl : padding-left,
-  m  : margin,
-  mt : margin-top,
-  mr : margin-right,
-  mb : margin-bottom,
-  ml : margin-left,
+$space-prefixes : (p : padding,
+pt : padding-top,
+pr : padding-right,
+pb : padding-bottom,
+pl : padding-left,
+m : margin,
+mt : margin-top,
+mr : margin-right,
+mb : margin-bottom,
+ml : margin-left,
 ) !default;
 
 @mixin make-spaces() {
-  @each $attr-short, $attr-long in $space-prefixes { 
-    @each $value in $space-values {
-      .#{$attr-short}-#{$value} {
-        #{$attr-long}: #{$value}#{'px'};
-      }
+
+    @each $attr-short,
+    $attr-long in $space-prefixes {
+        @each $value in $space-values {
+            .#{$attr-short}-#{$value} {
+                #{$attr-long}: #{$value}#{'px'};
+            }
+        }
     }
-  }
+}
+
+// width
+@mixin make-width() {
+    @for $i from 1 through 10 {
+        .w-#{$i} {
+            width: ($i * 10%)
+        }
+    }
 }
