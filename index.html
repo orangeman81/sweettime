@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sweet Time</title>
+    <title>Suite Time</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -15,10 +15,10 @@
         <nav id="mainNavbar">
             <ul>
                 <li>
-                    <a>home</a>
+                    <a href="index.html">home</a>
                 </li>
                 <li>
-                    <a>camere</a>
+                    <a href="rooms.html">camere</a>
                 </li>
                 <li><img src="assets/logo.svg" alt=""></li>
                 <li>
@@ -29,7 +29,9 @@
                 </li>
             </ul>
         </nav>
-        <video crossorigin="anonymous" poster="assets/hero_img.jpg" src="assets/hero.mp4" autoplay loop></video>
+        <video crossorigin="anonymous" poster="assets/hero_img.jpg" autoplay loop>
+            <source src="assets/hero.mp4" type="video/mp4">
+        </video>
         <div class="content">
             <h1>Suite Time</h1>
             <p>Ospitalità autentica</p>
@@ -175,9 +177,14 @@
         <header>
             <h2>dove siamo</h2>
         </header>
-        <figure>
-            <img src="assets/map&legend.png" class="res" alt="">
-        </figure>
+        <div class="row">
+            <figure class="col s12 m8">
+                <img src="assets/map.svg" class="res" alt="Capri map">
+            </figure>
+            <figure class="col s12 m4">
+                <img src="assets/legend.svg" class="res" alt="Capri map legend">
+            </figure>
+        </div>
     </section>
     <footer id="mainFooter">
         <img src="assets/footer_logo.svg" alt="">

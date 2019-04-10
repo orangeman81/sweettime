@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.266" height="78.5" viewBox="0 0 56.266 78.5">
+  <g id="wifi_icon" transform="translate(-1142.5 -1694.5)">
+    <g id="_006-internet" data-name="006-internet" transform="translate(1022 1695.94)">
+      <g id="Group_59" data-name="Group 59" transform="translate(122 0.06)">
+        <g id="Group_58" data-name="Group 58">
+          <circle id="Ellipse_6" data-name="Ellipse 6" cx="4.02" cy="4.02" r="4.02" transform="translate(22.714 31.96)" fill="#c4ab85" stroke="#fff" stroke-width="1"/>
+          <path id="Path_172" data-name="Path 172" d="M128.862,16.169A27.729,27.729,0,0,1,148.545,8.1h.093A27.707,27.707,0,0,1,168.4,16.169a4.02,4.02,0,0,0,5.685-5.685,36.294,36.294,0,0,0-50.911,0,4.02,4.02,0,1,0,5.685,5.685Z" transform="translate(-122 -0.06)" fill="#c4ab85" stroke="#fff" stroke-width="3"/>
+          <path id="Path_173" data-name="Path 173" d="M204.347,89.929a4.02,4.02,0,0,0,2.843-6.862,20.5,20.5,0,0,0-28.995,0,4.02,4.02,0,1,0,5.685,5.685,12.463,12.463,0,0,1,17.624,0A4.006,4.006,0,0,0,204.347,89.929Z" transform="translate(-165.958 -61.584)" fill="#c4ab85" stroke="#fff" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+    <text id="WI-FI" transform="translate(1148 1768)" fill="#c4ab85" font-size="18" font-family="PTSans-Regular, PT Sans" letter-spacing="0.05em"><tspan x="0" y="0">WI-FI</tspan></text>
+  </g>
+</svg>

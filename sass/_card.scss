@@ -12,8 +12,58 @@
         padding-right: 16px
     }
 
+    p {
+        font-size: 22px
+    }
+}
+
+.roomCard {
+    display: flex;
+    max-height: 672px;
+
+    figure {
+        padding-right: 16px;
+        flex-basis: 50%;
+
+        img {
+            height: 100%
+        }
+    }
+
     .content {
-        font-size: 22px;
-        flex-grow: 3
+        padding: 24px;
+        flex-basis: 50%;
+        background: $off-white;
+        position: relative;
+        box-sizing: content-box;
+
+        h3 {
+            color: $color;
+            font-size: 43px;
+            margin-top: 40px;
+            margin-bottom: 58px
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 72px
+        }
+    }
+
+    span {
+        display: flex;
+
+        img:not(:last-child) {
+            margin-right: 52px
+        }
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: $secondary
     }
 }

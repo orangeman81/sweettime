@@ -13,9 +13,15 @@ ul {
     }
 }
 
+// layout fix
+html,
+body {
+    overflow-x: hidden;
+}
+
 // body background-color
 body {
-    background-color: $bodyGray
+    background-color: $bodyGray;
 }
 
 // images

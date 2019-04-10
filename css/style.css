@@ -14,6 +14,11 @@ ul li {
   list-style: none;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #F2F2F2;
 }
@@ -134,6 +139,7 @@ a,
 button {
   line-height: 1.2;
   margin: 0;
+  font-weight: inherit;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -775,11 +781,66 @@ button[disabled],
   padding-right: 16px;
 }
 
-.card .content {
+.card p {
   font-size: 22px;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+}
+
+.roomCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 672px;
+}
+
+.roomCard figure {
+  padding-right: 16px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.roomCard figure img {
+  height: 100%;
+}
+
+.roomCard .content {
+  padding: 24px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.roomCard .content h3 {
+  color: #033864;
+  font-size: 43px;
+  margin-top: 40px;
+  margin-bottom: 58px;
+}
+
+.roomCard .content p {
+  font-size: 20px;
+  margin-bottom: 72px;
+}
+
+.roomCard span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.roomCard span img:not(:last-child) {
+  margin-right: 52px;
+}
+
+.roomCard button {
+  width: 100%;
+  border: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #BEA473;
 }
 
 .tile {
@@ -921,6 +982,14 @@ a.tile .tile-icon {
   padding: 72px;
 }
 
+.p-80 {
+  padding: 80px;
+}
+
+.p-88 {
+  padding: 88px;
+}
+
 .pt-0 {
   padding-top: 0px;
 }
@@ -963,6 +1032,14 @@ a.tile .tile-icon {
 
 .pt-72 {
   padding-top: 72px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-88 {
+  padding-top: 88px;
 }
 
 .pr-0 {
@@ -1009,6 +1086,14 @@ a.tile .tile-icon {
   padding-right: 72px;
 }
 
+.pr-80 {
+  padding-right: 80px;
+}
+
+.pr-88 {
+  padding-right: 88px;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1051,6 +1136,14 @@ a.tile .tile-icon {
 
 .pb-72 {
   padding-bottom: 72px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pb-88 {
+  padding-bottom: 88px;
 }
 
 .pl-0 {
@@ -1097,6 +1190,14 @@ a.tile .tile-icon {
   padding-left: 72px;
 }
 
+.pl-80 {
+  padding-left: 80px;
+}
+
+.pl-88 {
+  padding-left: 88px;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -1139,6 +1240,14 @@ a.tile .tile-icon {
 
 .m-72 {
   margin: 72px;
+}
+
+.m-80 {
+  margin: 80px;
+}
+
+.m-88 {
+  margin: 88px;
 }
 
 .mt-0 {
@@ -1185,6 +1294,14 @@ a.tile .tile-icon {
   margin-top: 72px;
 }
 
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-88 {
+  margin-top: 88px;
+}
+
 .mr-0 {
   margin-right: 0px;
 }
@@ -1227,6 +1344,14 @@ a.tile .tile-icon {
 
 .mr-72 {
   margin-right: 72px;
+}
+
+.mr-80 {
+  margin-right: 80px;
+}
+
+.mr-88 {
+  margin-right: 88px;
 }
 
 .mb-0 {
@@ -1273,6 +1398,14 @@ a.tile .tile-icon {
   margin-bottom: 72px;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-88 {
+  margin-bottom: 88px;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -1315,6 +1448,14 @@ a.tile .tile-icon {
 
 .ml-72 {
   margin-left: 72px;
+}
+
+.ml-80 {
+  margin-left: 80px;
+}
+
+.ml-88 {
+  margin-left: 88px;
 }
 
 .w-1 {
@@ -1409,12 +1550,20 @@ a.tile .tile-icon {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.25);
   z-index: 1;
+}
+
+#mainHeader img.hero {
+  height: 100vh;
 }
 
 #mainHeader video {
   height: calc(100vh - 136px);
+}
+
+#mainHeader img.hero,
+#mainHeader video {
   width: 100%;
   position: absolute;
   top: 0;
@@ -1433,6 +1582,10 @@ a.tile .tile-icon {
 #mainHeader .content h1 {
   color: #BEA473;
   line-height: .8;
+}
+
+#mainHeader .content h1.alt {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #mainHeader .content h1 ~ p {
