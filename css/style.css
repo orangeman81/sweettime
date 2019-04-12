@@ -659,23 +659,37 @@ nav#mainNavbar .mobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 36px;
+  z-index: 999;
 }
 
 nav#mainNavbar .mobile #menu {
   width: 24px;
   position: absolute;
   left: 24px;
-  top: 96px;
+  top: 80px;
   cursor: pointer;
 }
 
-nav#mainNavbar .mobile > span img {
+nav#mainNavbar .mobile > img {
   height: 88px;
 }
 
 nav#mainNavbar .mobile .nav {
   margin: 0;
   max-height: 0;
+  padding-bottom: 88px;
   overflow: hidden;
   display: none;
   padding-top: 16px;
@@ -711,15 +725,13 @@ nav#mainNavbar .mobile .nav li:last-child img {
   }
 }
 
-nav#mainNavbar.open {
-  height: 100%;
-}
-
 nav#mainNavbar.open .mobile {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(80%, rgba(255, 255, 255, 0.8)), to(transparent));
+  background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0.8) 80%, transparent 100%);
 }
 
 nav#mainNavbar.open .mobile .nav {
@@ -1956,7 +1968,7 @@ a.tile .tile-icon {
 }
 
 #mainHeader .content {
-  z-index: 999;
+  z-index: 666;
   margin-bottom: 76px;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }

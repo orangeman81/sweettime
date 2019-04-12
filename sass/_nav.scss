@@ -42,24 +42,31 @@ nav#mainNavbar {
 
     .mobile {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 36px;
+        z-index: 999;
 
         #menu {
             width: 24px;
             position: absolute;
             left: 24px;
-            top: 96px;
+            top: 80px;
             cursor: pointer;
         }
 
-        &>span {
-            img {
-                height: 88px;
-            }
+        &>img {
+            height: 88px;
         }
 
         .nav {
             margin: 0;
             max-height: 0;
+            padding-bottom: 88px;
             overflow: hidden;
             display: none;
             padding-top: 16px;
@@ -90,10 +97,9 @@ nav#mainNavbar {
     }
 
     &.open {
-        height: 100%;
-
         .mobile {
             flex-direction: column;
+            background: linear-gradient(to bottom, #fff 0%, $off-white 80%, transparent 100%);
 
             .nav {
                 max-height: 100%;
