@@ -11,17 +11,19 @@ nav#mainNavbar {
     z-index: 999;
 
     ul {
+        a {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase
+        }
+    }
+
+    &>ul {
         display: flex;
         align-items: center;
 
         i {
             line-height: inherit
-        }
-
-        a {
-            font-size: 20px;
-            font-weight: 700;
-            text-transform: uppercase
         }
 
         img {
@@ -35,6 +37,69 @@ nav#mainNavbar {
 
         @media screen and (max-width: $tablet) {
             display: none
+        }
+    }
+
+    .mobile {
+        display: flex;
+
+        #menu {
+            width: 24px;
+            position: absolute;
+            left: 24px;
+            top: 96px;
+            cursor: pointer;
+        }
+
+        &>span {
+            img {
+                height: 88px;
+            }
+        }
+
+        .nav {
+            margin: 0;
+            max-height: 0;
+            overflow: hidden;
+            display: none;
+            padding-top: 16px;
+            transition: all .3s ease;
+            animation: open .6s ease;
+
+            li {
+                text-align: center;
+
+                a {
+                    line-height: 6;
+                }
+
+                &:last-child {
+                    display: flex;
+                    justify-content: space-around;
+
+                    img {
+                        height: 16px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+    &.open {
+        height: 100%;
+
+        .mobile {
+            flex-direction: column;
+
+            .nav {
+                max-height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

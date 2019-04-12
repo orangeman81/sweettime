@@ -24,10 +24,14 @@ h1 {
 
 h2 {
     font-size: $h2-size;
+    font-weight: $light;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: $h3-size;
+    color: $color;
+    text-transform: uppercase;
 }
 
 h4,
@@ -52,6 +56,14 @@ strong {
     color: $secondary
 }
 
+h4,
+h5,
+h6,
+a,
+button {
+    font-weight: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -62,7 +74,6 @@ a,
 button {
     line-height: 1.2;
     margin: 0;
-    font-weight: inherit;
     font-family: 'Josefin Sans', sans-serif;
 }
 

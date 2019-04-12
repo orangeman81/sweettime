@@ -27,6 +27,7 @@ body {
 // images
 img.res {
     max-width: 100%;
+    box-sizing: border-box;
     object-fit: cover
 }
 
