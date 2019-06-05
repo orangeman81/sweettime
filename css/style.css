@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 body,
 figure {
@@ -133,7 +133,7 @@ small {
 
 strong {
   font-weight: 700;
-  color: #BEA473;
+  color: #9c7f48;
 }
 
 h4,
@@ -220,7 +220,8 @@ hr {
   }
 }
 
-.row, section .slide {
+.row, section .slide,
+main .slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,141 +230,141 @@ hr {
   margin: .5rem -.5rem;
 }
 
-.row .col, section .slide .col {
+.row .col, section .slide .col, main .slide .col {
   padding: .5rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.row .col.s1, section .slide .col.s1 {
+.row .col.s1, section .slide .col.s1, main .slide .col.s1 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 8.33333%;
           flex: 1 0 8.33333%;
 }
 
-.row .col.s2, section .slide .col.s2 {
+.row .col.s2, section .slide .col.s2, main .slide .col.s2 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 16.66667%;
           flex: 1 0 16.66667%;
 }
 
-.row .col.s3, section .slide .col.s3 {
+.row .col.s3, section .slide .col.s3, main .slide .col.s3 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 25%;
           flex: 1 0 25%;
 }
 
-.row .col.s4, section .slide .col.s4 {
+.row .col.s4, section .slide .col.s4, main .slide .col.s4 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 33.33333%;
           flex: 1 0 33.33333%;
 }
 
-.row .col.s5, section .slide .col.s5 {
+.row .col.s5, section .slide .col.s5, main .slide .col.s5 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 41.66667%;
           flex: 1 0 41.66667%;
 }
 
-.row .col.s6, section .slide .col.s6 {
+.row .col.s6, section .slide .col.s6, main .slide .col.s6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
 }
 
-.row .col.s7, section .slide .col.s7 {
+.row .col.s7, section .slide .col.s7, main .slide .col.s7 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 58.33333%;
           flex: 1 0 58.33333%;
 }
 
-.row .col.s8, section .slide .col.s8 {
+.row .col.s8, section .slide .col.s8, main .slide .col.s8 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 66.66667%;
           flex: 1 0 66.66667%;
 }
 
-.row .col.s9, section .slide .col.s9 {
+.row .col.s9, section .slide .col.s9, main .slide .col.s9 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 75%;
           flex: 1 0 75%;
 }
 
-.row .col.s10, section .slide .col.s10 {
+.row .col.s10, section .slide .col.s10, main .slide .col.s10 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 83.33333%;
           flex: 1 0 83.33333%;
 }
 
-.row .col.s11, section .slide .col.s11 {
+.row .col.s11, section .slide .col.s11, main .slide .col.s11 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 91.66667%;
           flex: 1 0 91.66667%;
 }
 
-.row .col.s12, section .slide .col.s12 {
+.row .col.s12, section .slide .col.s12, main .slide .col.s12 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
 }
 
-@media screen and (min-width: 1366px) {
-  .row .col.m1, section .slide .col.m1 {
+@media screen and (min-width: 1280px) {
+  .row .col.m1, section .slide .col.m1, main .slide .col.m1 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 8.33333%;
             flex: 0 1 8.33333%;
   }
-  .row .col.m2, section .slide .col.m2 {
+  .row .col.m2, section .slide .col.m2, main .slide .col.m2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 16.66667%;
             flex: 0 1 16.66667%;
   }
-  .row .col.m3, section .slide .col.m3 {
+  .row .col.m3, section .slide .col.m3, main .slide .col.m3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
   }
-  .row .col.m4, section .slide .col.m4 {
+  .row .col.m4, section .slide .col.m4, main .slide .col.m4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.33333%;
             flex: 0 1 33.33333%;
   }
-  .row .col.m5, section .slide .col.m5 {
+  .row .col.m5, section .slide .col.m5, main .slide .col.m5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.66667%;
             flex: 0 1 41.66667%;
   }
-  .row .col.m6, section .slide .col.m6 {
+  .row .col.m6, section .slide .col.m6, main .slide .col.m6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
-  .row .col.m7, section .slide .col.m7 {
+  .row .col.m7, section .slide .col.m7, main .slide .col.m7 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 58.33333%;
             flex: 0 1 58.33333%;
   }
-  .row .col.m8, section .slide .col.m8 {
+  .row .col.m8, section .slide .col.m8, main .slide .col.m8 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 66.66667%;
             flex: 0 1 66.66667%;
   }
-  .row .col.m9, section .slide .col.m9 {
+  .row .col.m9, section .slide .col.m9, main .slide .col.m9 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
   }
-  .row .col.m10, section .slide .col.m10 {
+  .row .col.m10, section .slide .col.m10, main .slide .col.m10 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 83.33333%;
             flex: 0 1 83.33333%;
   }
-  .row .col.m11, section .slide .col.m11 {
+  .row .col.m11, section .slide .col.m11, main .slide .col.m11 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 91.66667%;
             flex: 0 1 91.66667%;
   }
-  .row .col.m12, section .slide .col.m12 {
+  .row .col.m12, section .slide .col.m12, main .slide .col.m12 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -371,62 +372,62 @@ hr {
 }
 
 @media screen and (min-width: 1440px) {
-  .row .col.l1, section .slide .col.l1 {
+  .row .col.l1, section .slide .col.l1, main .slide .col.l1 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 8.33333%;
             flex: 0 1 8.33333%;
   }
-  .row .col.l2, section .slide .col.l2 {
+  .row .col.l2, section .slide .col.l2, main .slide .col.l2 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 16.66667%;
             flex: 0 1 16.66667%;
   }
-  .row .col.l3, section .slide .col.l3 {
+  .row .col.l3, section .slide .col.l3, main .slide .col.l3 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
   }
-  .row .col.l4, section .slide .col.l4 {
+  .row .col.l4, section .slide .col.l4, main .slide .col.l4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 33.33333%;
             flex: 0 1 33.33333%;
   }
-  .row .col.l5, section .slide .col.l5 {
+  .row .col.l5, section .slide .col.l5, main .slide .col.l5 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 41.66667%;
             flex: 0 1 41.66667%;
   }
-  .row .col.l6, section .slide .col.l6 {
+  .row .col.l6, section .slide .col.l6, main .slide .col.l6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
   }
-  .row .col.l7, section .slide .col.l7 {
+  .row .col.l7, section .slide .col.l7, main .slide .col.l7 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 58.33333%;
             flex: 0 1 58.33333%;
   }
-  .row .col.l8, section .slide .col.l8 {
+  .row .col.l8, section .slide .col.l8, main .slide .col.l8 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 66.66667%;
             flex: 0 1 66.66667%;
   }
-  .row .col.l9, section .slide .col.l9 {
+  .row .col.l9, section .slide .col.l9, main .slide .col.l9 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
   }
-  .row .col.l10, section .slide .col.l10 {
+  .row .col.l10, section .slide .col.l10, main .slide .col.l10 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 83.33333%;
             flex: 0 1 83.33333%;
   }
-  .row .col.l11, section .slide .col.l11 {
+  .row .col.l11, section .slide .col.l11, main .slide .col.l11 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 91.66667%;
             flex: 0 1 91.66667%;
   }
-  .row .col.l12, section .slide .col.l12 {
+  .row .col.l12, section .slide .col.l12, main .slide .col.l12 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
@@ -434,7 +435,7 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-  .row .fw, section .slide .fw, .row .col.s1, section .slide .col.s1, .row .col.s2, section .slide .col.s2, .row .col.s3, section .slide .col.s3, .row .col.s4, section .slide .col.s4, .row .col.s5, section .slide .col.s5, .row .col.s6, section .slide .col.s6, .row .col.s7, section .slide .col.s7, .row .col.s8, section .slide .col.s8, .row .col.s9, section .slide .col.s9, .row .col.s10, section .slide .col.s10, .row .col.s11, section .slide .col.s11, .row .col.s12, section .slide .col.s12 {
+  .row .fw, section .slide .fw, main .slide .fw, .row .col.s1, section .slide .row .col.s1, .row section .slide .col.s1, main .slide .row .col.s1, .row main .slide .col.s1, .row section .slide .col.s1, section .slide .row .col.s1, section .slide .col.s1, main section .slide .col.s1, section main .slide .col.s1, .row main .slide .col.s1, main .slide .row .col.s1, section main .slide .col.s1, main section .slide .col.s1, main .slide .col.s1, .row .col.s2, section .slide .row .col.s2, .row section .slide .col.s2, main .slide .row .col.s2, .row main .slide .col.s2, .row section .slide .col.s2, section .slide .row .col.s2, section .slide .col.s2, main section .slide .col.s2, section main .slide .col.s2, .row main .slide .col.s2, main .slide .row .col.s2, section main .slide .col.s2, main section .slide .col.s2, main .slide .col.s2, .row .col.s3, section .slide .row .col.s3, .row section .slide .col.s3, main .slide .row .col.s3, .row main .slide .col.s3, .row section .slide .col.s3, section .slide .row .col.s3, section .slide .col.s3, main section .slide .col.s3, section main .slide .col.s3, .row main .slide .col.s3, main .slide .row .col.s3, section main .slide .col.s3, main section .slide .col.s3, main .slide .col.s3, .row .col.s4, section .slide .row .col.s4, .row section .slide .col.s4, main .slide .row .col.s4, .row main .slide .col.s4, .row section .slide .col.s4, section .slide .row .col.s4, section .slide .col.s4, main section .slide .col.s4, section main .slide .col.s4, .row main .slide .col.s4, main .slide .row .col.s4, section main .slide .col.s4, main section .slide .col.s4, main .slide .col.s4, .row .col.s5, section .slide .row .col.s5, .row section .slide .col.s5, main .slide .row .col.s5, .row main .slide .col.s5, .row section .slide .col.s5, section .slide .row .col.s5, section .slide .col.s5, main section .slide .col.s5, section main .slide .col.s5, .row main .slide .col.s5, main .slide .row .col.s5, section main .slide .col.s5, main section .slide .col.s5, main .slide .col.s5, .row .col.s6, section .slide .row .col.s6, .row section .slide .col.s6, main .slide .row .col.s6, .row main .slide .col.s6, .row section .slide .col.s6, section .slide .row .col.s6, section .slide .col.s6, main section .slide .col.s6, section main .slide .col.s6, .row main .slide .col.s6, main .slide .row .col.s6, section main .slide .col.s6, main section .slide .col.s6, main .slide .col.s6, .row .col.s7, section .slide .row .col.s7, .row section .slide .col.s7, main .slide .row .col.s7, .row main .slide .col.s7, .row section .slide .col.s7, section .slide .row .col.s7, section .slide .col.s7, main section .slide .col.s7, section main .slide .col.s7, .row main .slide .col.s7, main .slide .row .col.s7, section main .slide .col.s7, main section .slide .col.s7, main .slide .col.s7, .row .col.s8, section .slide .row .col.s8, .row section .slide .col.s8, main .slide .row .col.s8, .row main .slide .col.s8, .row section .slide .col.s8, section .slide .row .col.s8, section .slide .col.s8, main section .slide .col.s8, section main .slide .col.s8, .row main .slide .col.s8, main .slide .row .col.s8, section main .slide .col.s8, main section .slide .col.s8, main .slide .col.s8, .row .col.s9, section .slide .row .col.s9, .row section .slide .col.s9, main .slide .row .col.s9, .row main .slide .col.s9, .row section .slide .col.s9, section .slide .row .col.s9, section .slide .col.s9, main section .slide .col.s9, section main .slide .col.s9, .row main .slide .col.s9, main .slide .row .col.s9, section main .slide .col.s9, main section .slide .col.s9, main .slide .col.s9, .row .col.s10, section .slide .row .col.s10, .row section .slide .col.s10, main .slide .row .col.s10, .row main .slide .col.s10, .row section .slide .col.s10, section .slide .row .col.s10, section .slide .col.s10, main section .slide .col.s10, section main .slide .col.s10, .row main .slide .col.s10, main .slide .row .col.s10, section main .slide .col.s10, main section .slide .col.s10, main .slide .col.s10, .row .col.s11, section .slide .row .col.s11, .row section .slide .col.s11, main .slide .row .col.s11, .row main .slide .col.s11, .row section .slide .col.s11, section .slide .row .col.s11, section .slide .col.s11, main section .slide .col.s11, section main .slide .col.s11, .row main .slide .col.s11, main .slide .row .col.s11, section main .slide .col.s11, main section .slide .col.s11, main .slide .col.s11, .row .col.s12, section .slide .row .col.s12, .row section .slide .col.s12, main .slide .row .col.s12, .row main .slide .col.s12, .row section .slide .col.s12, section .slide .row .col.s12, section .slide .col.s12, main section .slide .col.s12, section main .slide .col.s12, .row main .slide .col.s12, main .slide .row .col.s12, section main .slide .col.s12, main section .slide .col.s12, main .slide .col.s12 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -470,7 +471,7 @@ hr {
   height: 100%;
 }
 
-.gallery figure span {
+.gallery figure figcaption {
   opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,13 +492,13 @@ hr {
   background: rgba(3, 56, 100, 0.8);
   font-family: 'Josefin Sans', sans-serif;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 30px;
+  font-size: 24px;
   text-decoration: underline;
   -webkit-text-decoration-color: #BEA473;
           text-decoration-color: #BEA473;
 }
 
-.gallery figure span:hover {
+.gallery figure figcaption:hover {
   opacity: 1;
 }
 
@@ -695,8 +696,8 @@ nav#mainNavbar .mobile .nav {
   padding-top: 16px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  -webkit-animation: open .6s ease;
-          animation: open .6s ease;
+  -webkit-animation: open .4s ease;
+          animation: open .4s ease;
 }
 
 nav#mainNavbar .mobile .nav li {
@@ -719,9 +720,16 @@ nav#mainNavbar .mobile .nav li:last-child img {
   height: 16px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   nav#mainNavbar .mobile {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  nav#mainNavbar {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(60%, rgba(255, 255, 255, 0.8)), color-stop(80%, rgba(255, 255, 255, 0.6)), to(transparent));
+    background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 0.6) 80%, transparent 100%);
   }
 }
 
@@ -745,7 +753,7 @@ nav#mainNavbar.open .mobile .nav {
           flex-direction: column;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   form {
     padding: 0 120px;
   }
@@ -854,15 +862,27 @@ button[disabled],
 }
 
 .roomCard button,
-form button {
+.roomCard .btn,
+form button,
+form .btn {
   width: 100%;
   border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #BEA473;
 }
 
 .roomCard button:hover,
-form button:hover {
+.roomCard .btn:hover,
+form button:hover,
+form .btn:hover {
   background: #033864;
+}
+
+.card h3,
+.roomCard h3 {
+  margin-top: 24px;
+  margin-bottom: 58px;
 }
 
 .card {
@@ -897,7 +917,6 @@ form button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 672px;
 }
 
 .roomCard figure,
@@ -952,19 +971,27 @@ form button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.roomCard span img {
+  max-width: 88px;
 }
 
 .roomCard span img:not(:last-child) {
-  margin-right: 52px;
+  margin-right: 32px;
 }
 
-.roomCard button {
+.roomCard button,
+.roomCard .btn {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
   .roomCard {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -981,79 +1008,33 @@ form button:hover {
     margin-right: 0;
   }
   .roomCard figure img {
-    min-height: 380px;
+    max-height: 380px;
     width: 100%;
+  }
+  .roomCard .content h3 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  .roomCard .content p {
+    font-size: 16px;
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .roomCard span {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .roomCard span img:not(:last-child) {
     margin-right: 0;
   }
   .roomCard span img {
+    padding: 8px;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    margin-bottom: 24px;
   }
-}
-
-.card h3,
-.roomCard h3 {
-  margin-top: 24px;
-  margin-bottom: 58px;
-}
-
-.tile {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: .75rem;
-  height: 256px;
-  overflow: hidden;
-  -webkit-animation: slide-out .3s ease-out;
-          animation: slide-out .3s ease-out;
-}
-
-.tile h5 {
-  margin: 0;
-  position: absolute;
-  bottom: .75rem;
-  left: .75rem;
-}
-
-.tile:hover:after {
-  content: "";
-  position: absolute;
-  left: -64%;
-  top: 0;
-  width: 200%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.25);
-  -webkit-animation: tile-out .3s ease-out;
-          animation: tile-out .3s ease-out;
-  -webkit-transform: rotate(45deg) translateX(0);
-          transform: rotate(45deg) translateX(0);
-}
-
-a.tile:hover i {
-  -webkit-animation: emphasis .4s both ease-out;
-          animation: emphasis .4s both ease-out;
-}
-
-.col:nth-child(odd) a.tile {
-  background: #c4c4c4;
-}
-
-.col:nth-child(even) a.tile {
-  background: #bfbfbf;
-}
-
-a.tile .tile-icon {
-  font-size: 6rem;
 }
 
 .ease, a:not(.btn) {
@@ -1083,13 +1064,13 @@ a.tile .tile-icon {
   display: flex;
 }
 
-@media only screen and (min-width: 1367px) {
+@media only screen and (min-width: 1281px) {
   .hide-laptop {
     display: none;
   }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1280px) {
   .hide-tablet {
     display: none;
   }
@@ -1938,6 +1919,7 @@ a.tile .tile-icon {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
 }
 
 #mainHeader:before {
@@ -1947,12 +1929,8 @@ a.tile .tile-icon {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.12);
   z-index: 1;
-}
-
-#mainHeader video {
-  max-height: calc(100vh - 136px);
 }
 
 #mainHeader img.hero,
@@ -1970,7 +1948,7 @@ a.tile .tile-icon {
 #mainHeader .content {
   z-index: 666;
   margin-bottom: 76px;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 #mainHeader .content h1 {
@@ -1982,16 +1960,29 @@ a.tile .tile-icon {
   color: rgba(255, 255, 255, 0.8);
 }
 
+@media screen and (max-width: 767px) {
+  #mainHeader .content h1 {
+    font-size: 76px;
+  }
+}
+
 #mainHeader .content h1 ~ p {
   font-size: 40px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-#mainHeader .content button {
+@media screen and (max-width: 767px) {
+  #mainHeader .content h1 ~ p {
+    font-size: 24px;
+  }
+}
+
+#mainHeader .content button,
+#mainHeader .content .btn {
   margin-top: 56px;
 }
 
-#mainHeader .squares {
+.squares {
   position: absolute;
   bottom: -56%;
   right: -160px;
@@ -1999,46 +1990,54 @@ a.tile .tile-icon {
 }
 
 @media screen and (max-width: 768px) {
-  #mainHeader .squares {
+  .squares {
     display: none;
   }
 }
 
-section header {
+section header,
+main header {
   text-align: center;
   padding: 148px 0;
 }
 
-section header p {
+section header p,
+main header p {
   font-size: 24px;
   padding: 16px 72px;
 }
 
 @media screen and (max-width: 768px) {
-  section header p {
+  section header p,
+  main header p {
     padding: 16px 0;
   }
 }
 
-section .slide {
+section .slide,
+main .slide {
   margin-bottom: 72px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-@media screen and (min-width: 1366px) {
-  section .slide {
+@media screen and (min-width: 1280px) {
+  section .slide,
+  main .slide {
     height: 300px;
   }
 }
 
-section .slide img {
+section .slide img,
+main .slide img {
   -webkit-animation: slide-out .3s ease;
           animation: slide-out .3s ease;
 }
 
 section .slide img,
-section .slide .card {
+section .slide .card,
+main .slide img,
+main .slide .card {
   height: 100%;
 }
 
@@ -2070,7 +2069,7 @@ nav.social a:hover {
   margin-top: 120px;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1280px) {
   .mainTitle {
     width: 60%;
   }

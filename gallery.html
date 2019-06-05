@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Suite Time Villa La Pergola è una deliziosa dimora situata a CAPRI. Costruita agli inizi dell'800 e rinnovata di recente - PRENOTA LA TUA VACANZA.">
+    <meta name="keywords"
+        content="suite time capri villa la pergola, Villa la Pergola, Bad & breakfast, b&b, b&b a Capri, affittacamere, Guest Rooms&Houses, Capri, Isola di Capri, La Pergola, Villa, Vacanze a Capri, la pergola capri, guest house capri">
+    <meta name="author" content="Stefano Imparato">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Suite Time</title>
@@ -12,76 +17,109 @@
     <style>
         .swiper-container {
             width: 100%;
-            padding-top: 168px;
             padding-bottom: 56px;
         }
 
         .swiper-slide {
             background-position: center;
             background-size: cover;
-            width: 48%;
-            height: 500px;
+            width: 68%;
+            height: 680px;
+        }
 
-            @media screen and (max-width: $tablet) {
-                width: 100%;
+        @media screen and (max-width: 769px) {
+            .swiper-slide {
+                width: 90%;
+                height: 500px;
             }
         }
     </style>
 </head>
 
-<body>
-    <header id="mainHeader">
-        <nav id="mainNavbar">
+<body itemscope itemtype="http://schema.org/WebPage">
+    <header id="mainHeader" itemscope itemtype="http://schema.org/WPHeader">
+        <nav id="mainNavbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <ul>
                 <li>
-                    <a href="index.html">home</a>
+                    <a itemprop="url" href="index.html">home</a>
                 </li>
                 <li>
-                    <a href="rooms.html">camere</a>
+                    <a itemprop="url" href="rooms.html">camere</a>
                 </li>
-                <li><img src="assets/logo.svg" alt=""></li>
+                <li itemscope itemtype="http://schema.org/Brand"><img itemprop="logo" src="assets/logo.svg"
+                        alt="hotel logo"></li>
                 <li>
-                    <a href="gallery.html">gallery</a>
+                <li>
+                    <a itemprop="url" href="gallery.html">gallery</a>
                 </li>
                 <li>
-                    <a href="contacts.html">contatti</a>
+                    <a itemprop="url" href="contacts.html">contatti</a>
                 </li>
             </ul>
+            <div class="mobile">
+                <a id="menu"><img src="assets/menu.svg" alt=""></a>
+                <img itemprop="logo" src="assets/logo.svg" alt="logo">
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a itemprop="url" href="index.html">home</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="rooms.html">camere</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="gallery.html">gallery</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="contacts.html">contatti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img src="assets/hero_img.jpg" alt="" class="hero">
+        <img itemprop="photo" src="assets/photo/hero_old.jpg" alt="" class="hero">
         <div class="content">
-            <h1 class="alt">Gallery</h1>
-            <p>Le nostre viste</p>
-            <button>prenota</button>
+            <h1 itemprop="name" class="alt">Gallery</h1>
+            <p itemprop="description">Isola di Capri</p>
+            <a itemprop="url" href="https://book.ermeshotels.com/#/hotel/2437/channel/959/language/2/rooms"
+                target="blank" class="btn">prenota</a>
         </div>
-        <img class="squares" src="assets/rombs.svg" alt="">
     </header>
-    <main class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(assets/s1.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s2.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s3.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s4.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s5.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s6.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s7.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s8.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s9.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s10.jpg)"></div>
-            <div class="swiper-slide" style="background-image:url(assets/s11.jpg)"></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+    <img class="squares" src="assets/rombs.svg" alt="">
+    <main itemscope itemtype="http://schema.org/TouristAttraction" class="container">
+        <header class="container">
+            <h2 itemscope="name">Suite Time – Villa la Pergola</h2>
+            <p itemscope="description">Il punto di partenza delle tue escursioni sull’isola di Capri per accoglierti e concederti il dovuto relax.</p>
+        </header>
+        <figure class="swiper-container">
+            <div class="swiper-wrapper">
+                <div itemscope="image" class="swiper-slide" style="background-image:url(assets/photo/s1.jpg)"></div>
+                <div itemscope="image" class="swiper-slide" style="background-image:url(assets/photo/s2.jpg)"></div>
+                <div itemscope="image" class="swiper-slide" style="background-image:url(assets/photo/s3.jpg)"></div>
+                <div itemscope="image" class="swiper-slide" style="background-image:url(assets/photo/s4.jpg)"></div>
+                <div itemscope="image" class="swiper-slide" style="background-image:url(assets/photo/s5.jpg)"></div>
+                <div itemscope="image" class="swiper-slide" style="background-image:url(assets/photo/s6.jpg)"></div>
+                <div itemscope="image" class="swiper-slide" style="background-image:url(assets/photo/s7.jpg)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </figure>
     </main>
-    <footer id="mainFooter">
-        <img src="assets/footer_logo.svg" alt="">
-        <address>
-            081 18544028 -info@suitetime.house<br>
-            Via Provinciale Anacapri 7 "Due Golfi" 80076 Capri (NA)
+    <footer itemscope itemtype="http://schema.org/WPFooter" id="mainFooter">
+        <img itemprop="logo" src="assets/footer_logo.svg" alt="">
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="postalCode">081 18544028 -info@suitetime.house</span><br>
+            <span itemprop="streetAddress">Via Provinciale Anacapri 7 - 80076 Capri (NA)</span>
+            <span itemprop="identifier">&ensp;P.IVA 08575691210</span>
         </address>
     </footer>
 
     <!-- app -->
+    <script src="app/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script>
@@ -101,6 +139,10 @@
             pagination: {
                 el: '.swiper-pagination',
             },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
         });
     </script>
 </body>

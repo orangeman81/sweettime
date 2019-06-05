@@ -1,3 +1,11 @@
+.card,
+.roomCard {
+    h3 {
+        margin-top: 24px;
+        margin-bottom: 58px
+    }
+}
+
 .card {
     display: flex;
     align-items: center;
@@ -19,7 +27,6 @@
 
 .roomCard {
     display: flex;
-    max-height: 672px;
 
     figure,
     .content {
@@ -67,19 +74,25 @@
     span {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            max-width: 88px
+        }
 
         img:not(:last-child) {
-            margin-right: 52px
+            margin-right: 32px
         }
     }
 
-    button {
+    button,
+    .btn {
         position: absolute;
         left: 0;
         bottom: 0;
     }
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $laptop - 1) {
         flex-direction: column;
         max-height: 100%;
 
@@ -92,28 +105,36 @@
             margin-right: 0;
 
             img {
-                min-height: 380px;
+                max-height: 380px;
                 width: 100%
             }
         }
 
+        .content {
+            h3 {
+                font-size: 32px;
+                margin-bottom: 24px
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 56px
+            }
+        }
+    }
+
+    @media screen and (max-width: $tablet - 1) {
         span {
+            justify-content: space-between;
+
             img:not(:last-child) {
                 margin-right: 0
             }
 
             img {
-                flex-basis: 50%;
-                margin-bottom: 24px
+                padding: 8px;
+                flex-basis: 50%
             }
         }
-    }
-}
-
-.card,
-.roomCard {
-    h3 {
-        margin-top: 24px;
-        margin-bottom: 58px
     }
 }

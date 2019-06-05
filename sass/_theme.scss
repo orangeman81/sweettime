@@ -6,6 +6,7 @@
     justify-content: space-between;
     position: relative;
     box-sizing: border-box;
+    overflow: hidden;
 
     &:before {
         content: "";
@@ -14,12 +15,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, .25);
+        background: rgba(0, 0, 0, .12);
         z-index: 1
-    }
-
-    video {
-        max-height: calc(100vh - 136px);
     }
 
     img.hero,
@@ -37,7 +34,7 @@
         @extend .container;
         z-index: 666;
         margin-bottom: 76px;
-        text-shadow: 0 0 6px rgba(0, 0, 0, .25);
+        text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.4);
 
         h1 {
             color: $secondary;
@@ -46,31 +43,41 @@
             &.alt {
                 color: $off-white
             }
+
+            @media screen and (max-width: $tablet - 1) {
+                font-size: 76px;
+            }
         }
 
         h1~p {
             font-size: 40px;
-            color: $off-white
+            color: $off-white;
+
+            @media screen and (max-width: $tablet - 1) {
+                font-size: 24px;
+            }
         }
 
-        button {
+        button,
+        .btn {
             margin-top: 56px
-        }
-    }
-
-    .squares {
-        position: absolute;
-        bottom: -56%;
-        right: -160px;
-        z-index: -1;
-
-        @media screen and (max-width: $tablet) {
-            display: none
         }
     }
 }
 
-section {
+.squares {
+    position: absolute;
+    bottom: -56%;
+    right: -160px;
+    z-index: -1;
+
+    @media screen and (max-width: $tablet) {
+        display: none
+    }
+}
+
+section,
+main {
     header {
         text-align: center;
         padding: 148px 0;

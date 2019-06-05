@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Suite Time Villa La Pergola è una deliziosa dimora situata a CAPRI. Costruita agli inizi dell'800 e rinnovata di recente - PRENOTA LA TUA VACANZA.">
+    <meta name="keywords"
+        content="suite time capri villa la pergola, Villa la Pergola, Bad & breakfast, b&b, b&b a Capri, affittacamere, Guest Rooms&Houses, Capri, Isola di Capri, La Pergola, Villa, Vacanze a Capri, la pergola capri, guest house capri">
+    <meta name="author" content="Stefano Imparato">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Suite Time</title>
@@ -10,44 +15,72 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-    <header id="mainHeader">
-        <nav id="mainNavbar">
+<body itemscope itemtype="http://schema.org/WebPage">
+    <header id="mainHeader" itemscope itemtype="http://schema.org/WPHeader">
+        <nav id="mainNavbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <ul>
                 <li>
-                    <a href="index.html">home</a>
+                    <a itemprop="url" href="index.html">home</a>
                 </li>
                 <li>
-                    <a href="rooms.html">camere</a>
+                    <a itemprop="url" href="rooms.html">camere</a>
                 </li>
-                <li><img src="assets/logo.svg" alt=""></li>
+                <li itemscope itemtype="http://schema.org/Brand"><img itemprop="logo" src="assets/logo.svg"
+                        alt="hotel logo"></li>
                 <li>
-                    <a href="gallery.html">gallery</a>
+                <li>
+                    <a itemprop="url" href="gallery.html">gallery</a>
                 </li>
                 <li>
-                    <a href="contacts.html">contatti</a>
+                    <a itemprop="url" href="contacts.html">contatti</a>
                 </li>
             </ul>
+            <div class="mobile">
+                <a id="menu"><img src="assets/menu.svg" alt=""></a>
+                <img itemprop="logo" src="assets/logo.svg" alt="logo">
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a itemprop="url" href="index.html">home</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="rooms.html">camere</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="gallery.html">gallery</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="contacts.html">contatti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img src="assets/rooms.jpg" alt="" class="hero">
+        <img itemprop="photo" src="assets/photo/hero_rooms.jpg" alt="" class="hero">
         <div class="content">
-            <h1 class="alt">Le Camere</h1>
-            <p>Prenota su booking.com</p>
-            <button>prenota</button>
+            <h1 itemprop="name" class="alt">Le Camere</h1>
+            <p itemprop="description">Prenota la tua vacanza</p>
+            <a itemprop="url" href="https://book.ermeshotels.com/#/hotel/2437/channel/959/language/2/rooms"
+                target="blank" class="btn">prenota</a>
         </div>
-        <img class="squares" src="assets/rombs.svg" alt="">
     </header>
-    <main class="container">
-        <article class="roomCard mt-88" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+    <img class="squares" src="assets/rombs.svg" alt="">
+    <main class="container" itemscope itemtype="http://schema.org/BedAndBreakfast">
+        <header>
+            <h2 itemprop="name">SUITE TIME, VILLA LA PERGOLA</h2>
+            <p itemprop="description">Suitetime Villa la pergola, costruita agli inizi dell’800 e rinnovata
+                completamente di recente, conserva
+                i tratti tipici delle tipiche ville di Capri.</p>
+        </header>
+        <article class="roomCard" itemprop="containsPlace" itemscope itemtype="http://schema.org/HotelRoom">
             <figure data-aos="fade-right">
-                <img src="assets/g-4.jpg" class="res slider1" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
-                <img src="assets/g-5.jpg" class="res slider1" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
-                <img src="assets/g-6.jpg" class="res slider1" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
+                <img src="assets/photo/room_g_1.jpg" class="res slider1" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
+                <img src="assets/photo/room_g_2.jpg" class="res slider1" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
                 <span onclick="plusDivs(-1, 0)">&#10094;</span>
                 <span onclick="plusDivs(1, 0)">&#10095;</span>
             </figure>
             <div class="content" data-aos="fade-left">
-                <h3 itemprop="name">SUPERIOR VISTA<br> GIARDINO</h3>
+                <h3 itemprop="name">SUPERIOR<br> VISTA GIARDINO</h3>
                 <p itemprop="description">E’ una camera matrimoniale finemente arredata, ristrutturata con un gusto
                     minimal e moderno ma che
                     nel contempo segue la tradizione locale caprese. La vista giardino è offerta dalla grande
@@ -62,19 +95,20 @@
                     <img src="assets/tree_icon.svg" alt="tv service">
                     <img src="assets/minibar_icon.svg" alt="tv service">
                 </span>
-                <button>Prenota</button>
+                <a href="https://book.ermeshotels.com/#/hotel/2437/channel/959/language/2/rooms" target="blank"
+                    class="btn">prenota</a>
             </div>
         </article>
-        <article class="roomCard mt-72" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+        <article class="roomCard mt-72" itemprop="containsPlace" itemscope itemtype="http://schema.org/HotelRoom">
             <figure data-aos="fade-up">
-                <img src="assets/g-1.jpg" class="res slider2" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
-                <img src="assets/g-2.jpg" class="res slider2" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
-                <img src="assets/g-3.jpg" class="res slider2" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
+                <img src="assets/photo/room_s_1.jpg" class="res slider2" itemprop="photo" alt="SUPERIOR VISTA MARE">
+                <img src="assets/photo/room_s_2.jpg" class="res slider2" itemprop="photo" alt="SUPERIOR VISTA MARE">
+                <img src="assets/photo/room_s_3.jpg" class="res slider2" itemprop="photo" alt="SUPERIOR VISTA MARE">
                 <span onclick="plusDivs(-1, 1)">&#10094;</span>
                 <span onclick="plusDivs(1, 1)">&#10095;</span>
             </figure>
             <div class="content" data-aos="fade-down">
-                <h3 itemprop="name">SUPERIOR VISTA<br> MARE</h3>
+                <h3 itemprop="name">SUPERIOR<br> VISTA MARE</h3>
                 <p itemprop="description">La camera è particolarmente luminosa, grazie all’ampia finestra che si
                     affaccia sul mare del Golfo di Napoli. L’ambiente, armonioso e rilassante, è arredato con un
                     gusto minimal e moderno ma che conserva allo stesso tempo lo stile caprese.
@@ -87,24 +121,24 @@
                     <img src="assets/sea_icon.svg" alt="tv service">
                     <img src="assets/minibar_icon.svg" alt="tv service">
                 </span>
-                <button>Prenota</button>
+                <a href="https://book.ermeshotels.com/#/hotel/2437/channel/959/language/2/rooms" target="blank"
+                    class="btn">prenota</a>
             </div>
         </article>
-        <article class="roomCard mt-72" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+        <article class="roomCard mt-72" itemprop="containsPlace" itemscope itemtype="http://schema.org/HotelRoom">
             <figure data-aos="fade-right">
-                <img src="assets/g-1.jpg" class="res slider3" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
-                <img src="assets/g-2.jpg" class="res slider3" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
-                <img src="assets/g-3.jpg" class="res slider3" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
+                <img src="assets/photo/room_d_1.jpg" class="res slider3" itemprop="photo" alt="DELUX VISTA MARE">
+                <img src="assets/photo/room_d_2.jpg" class="res slider3" itemprop="photo" alt="DELUX VISTA MARE">
+                <img src="assets/photo/room_d_3.jpg" class="res slider3" itemprop="photo" alt="DELUX VISTA MARE">
                 <span onclick="plusDivs(-1, 2)">&#10094;</span>
                 <span onclick="plusDivs(1, 2)">&#10095;</span>
             </figure>
             <div class="content" data-aos="fade-left">
-                <h3 itemprop="name">DELUXE CON BALCONE<br> VISTA MARE</h3>
-                <p itemprop="description">Un elegante ambiente reso particolarmente rilassante dal balcone che
-                    affaccia su una spettacolare vista mare.
-                    L’ambiente è moderno e caratterizzato dal pavimento in maiolica ottocentesca.
-                    Arredata in stile caprese è dotata di bagno personale e corredata da tv satellitare LCD schermo
-                    grande piatto, minibar e possibilità di connessione internet WI-FI.
+                <h3 itemprop="name">DELUXE<br> CON BALCONE VISTA MARE</h3>
+                <p itemprop="description">Un elegante ambiente reso particolarmente rilassante dal balcone che affaccia
+                    su una spettacolare vista mare. L’ambiente è moderno e caratterizzato dal pavimento in maiolica
+                    ottocentesca. Arredata in stile caprese è dotata di bagno personale e corredata da tv satellitare
+                    LCD schermo grande piatto, minibar e possibilità di connessione internet WI-FI.
                 </p>
                 <span>
                     <img src="assets/tv_icon.svg" alt="tv service">
@@ -112,23 +146,25 @@
                     <img src="assets/sea_icon.svg" alt="tv service">
                     <img src="assets/minibar_icon.svg" alt="tv service">
                 </span>
-                <button>Prenota</button>
+                <a href="https://book.ermeshotels.com/#/hotel/2437/channel/959/language/2/rooms" target="blank"
+                    class="btn">prenota</a>
             </div>
         </article>
-        <article class="roomCard mt-72" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+        <article class="roomCard mt-72" itemprop="containsPlace" itemscope itemtype="http://schema.org/HotelRoom">
             <figure data-aos="fade-up">
-                <img src="assets/g-1.jpg" class="res slider4" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
-                <img src="assets/g-2.jpg" class="res slider4" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
-                <img src="assets/g-3.jpg" class="res slider4" itemprop="photo" alt="SUPERIOR VISTA GIARDINO">
+                <img src="assets/photo/room_suite_1.jpg" class="res slider4" itemprop="photo"
+                    alt="SUPERIOR VISTA GIARDINO">
+                <img src="assets/photo/room_suite_terrace.jpg" class="res slider4" itemprop="photo"
+                    alt="SUPERIOR VISTA GIARDINO">
                 <span onclick="plusDivs(-1, 3)">&#10094;</span>
                 <span onclick="plusDivs(1, 3)">&#10095;</span>
             </figure>
             <div class="content" data-aos="fade-down">
                 <h3 itemprop="name">SUITE<br> CON TERRAZZO</h3>
-                <p itemprop="description">La camera è il posto perfetto per immergersi in un’oasi di pace e
-                    riservatezza a poche centinaia di metri dalla mondana Piazzetta e da Via Camerelle
-                    La suite può ospitare fino a 4 persone. E’ un angolo di paradiso dove è possibile consumare
-                    anche la prima colazione godendo della spettacolare vista sulla romantica Marina Piccola.
+                <p itemprop="description">Un elegante ambiente reso particolarmente rilassante da un terrazzo che
+                    affaccia su una spettacolare vista mare e giardino. L’ambiente è moderno e caratterizzato dal
+                    pavimento in maiolica ottocentesca. Arredata in stile caprese è dotata di due bagni e corredata da
+                    tv satellitare LCD schermo grande piatto, minibar e possibilità di connessione internet WI-FI.
                 </p>
                 <span>
                     <img src="assets/tv_icon.svg" alt="tv service">
@@ -136,15 +172,17 @@
                     <img src="assets/sea_icon.svg" alt="tv service">
                     <img src="assets/minibar_icon.svg" alt="tv service">
                 </span>
-                <button>Prenota</button>
+                <a href="https://book.ermeshotels.com/#/hotel/2437/channel/959/language/2/rooms" target="blank"
+                    class="btn">prenota</a>
             </div>
         </article>
     </main>
-    <footer id="mainFooter">
-        <img src="assets/footer_logo.svg" alt="">
-        <address>
-            081 18544028 -info@suitetime.house<br>
-            Via Provinciale Anacapri 7 "Due Golfi" 80076 Capri (NA)
+    <footer itemscope itemtype="http://schema.org/WPFooter" id="mainFooter">
+        <img itemprop="logo" src="assets/footer_logo.svg" alt="">
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="postalCode">081 18544028 -info@suitetime.house</span><br>
+            <span itemprop="streetAddress">Via Provinciale Anacapri 7 - 80076 Capri (NA)</span>
+            <span itemprop="identifier">&ensp;P.IVA 08575691210</span>
         </address>
     </footer>
 

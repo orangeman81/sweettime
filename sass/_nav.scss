@@ -71,7 +71,7 @@ nav#mainNavbar {
             display: none;
             padding-top: 16px;
             transition: all .3s ease;
-            animation: open .6s ease;
+            animation: open .4s ease;
 
             li {
                 text-align: center;
@@ -91,9 +91,13 @@ nav#mainNavbar {
             }
         }
 
-        @media only screen and (min-width: $tablet) {
+        @media only screen and (min-width: $tablet + 1) {
             display: none;
         }
+    }
+
+    @media only screen and (min-width: $laptop) {
+        background: linear-gradient(to bottom, #fff 0%, $off-white 60%, rgba(256, 256, 256, .6) 80%, transparent 100%)
     }
 
     &.open {

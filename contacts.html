@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Suite Time Villa La Pergola è una deliziosa dimora situata a CAPRI. Costruita agli inizi dell'800 e rinnovata di recente - PRENOTA LA TUA VACANZA.">
+    <meta name="keywords"
+        content="suite time capri villa la pergola, Villa la Pergola, Bad & breakfast, b&b, b&b a Capri, affittacamere, Guest Rooms&Houses, Capri, Isola di Capri, La Pergola, Villa, Vacanze a Capri, la pergola capri, guest house capri">
+    <meta name="author" content="Stefano Imparato">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Suite Time</title>
@@ -10,49 +15,71 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
     <header id="mainHeader">
-        <nav id="mainNavbar">
+        <nav id="mainNavbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <ul>
                 <li>
-                    <a href="index.html">home</a>
+                    <a itemprop="url" href="index.html">home</a>
                 </li>
                 <li>
-                    <a href="rooms.html">camere</a>
+                    <a itemprop="url" href="rooms.html">camere</a>
                 </li>
-                <li><img src="assets/logo.svg" alt=""></li>
+                <li itemscope itemtype="http://schema.org/Brand"><img itemprop="logo" src="assets/logo.svg"
+                        alt="hotel logo"></li>
                 <li>
-                    <a href="gallery.html">gallery</a>
+                <li>
+                    <a itemprop="url" href="gallery.html">gallery</a>
                 </li>
                 <li>
-                    <a href="contacts.html">contatti</a>
+                    <a itemprop="url" href="contacts.html">contatti</a>
                 </li>
             </ul>
+            <div class="mobile">
+                <a id="menu"><img src="assets/menu.svg" alt=""></a>
+                <img itemprop="logo" src="assets/logo.svg" alt="logo">
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a itemprop="url" href="index.html">home</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="rooms.html">camere</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="gallery.html">gallery</a>
+                        </li>
+                        <li>
+                            <a itemprop="url" href="contacts.html">contatti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img src="assets/contacts.jpg" alt="" class="hero">
+        <img itemprop="photo" src="assets/photo/hero.jpg" alt="" class="hero">
         <div class="content">
             <h1 class="alt">Contatti</h1>
             <p>Per info e prenotazioni</p>
-            <button>contattaci</button>
+            <a href="https://book.ermeshotels.com/#/hotel/2437/channel/959/language/2/rooms" target="blank"
+                class="btn">prenota</a>
         </div>
     </header>
     <section class="container">
         <header>
             <h2>Come raggiungerci</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi beatae, aperiam pariatur dolore
-                voluptatibus vero quas enim quos accusamus molestias iusto. Possimus voluptatibus, corrupti tempore
-                deleniti debitis dignissimos molestias autem.</p>
+            <p>Atmosfera e Comfort: due motivi in più per scegliere Suite Time – Villa la Pergola a Capri</p>
         </header>
         <div class="row">
             <div class="col m6 s12" data-aos="fade-right">
                 <article class="card">
                     <div class="content">
-                        <h3>Con la macchina</h3>
-                        <p>Suitetime Villa La Pergola è un’oasi in cui la tranquillità dei luoghi vi incanteranno pur
-                            trovandosi nel cuore di Capri, situata a circa 4 minuti a piedi dalla famosa Piazzetta di
-                            Capri
-                            e ad un solo minuto dalla fermata dei bus che collega il centro a tutte le direzioni e
-                            spiagge.
+                        <h3>Funicolare</h3>
+                        <p>
+                            Il mezzo più comodo e veloce è la funicolare. La
+                            biglietteria si trova sulla destra del molo di arrivo degli aliscafi. Raggiunto il
+                            capolinea proseguire a piedi sulla destra per 500 metri prendendo come riferimento la
+                            Piazzetta " Due Golfi"; continuare verso la montagna. Suite Time Villa la
+                            Pergola si trova sulla sinistra su Via Provinciale Anacapri 7.
                         </p>
                     </div>
                 </article>
@@ -60,13 +87,13 @@
             <div class="col m6 s12" data-aos="fade-up">
                 <article class="card">
                     <div class="content">
-                        <h3>Con l'autobus</h3>
+                        <h3>Autobus</h3>
                         <p>
-                            Suitetime Villa La Pergola è un’oasi in cui la tranquillità dei luoghi vi incanteranno pur
-                            trovandosi nel cuore di Capri, situata a circa 4 minuti a piedi dalla famosa Piazzetta di
-                            Capri
-                            e ad un solo minuto dalla fermata dei bus che collega il centro a tutte le direzioni e
-                            spiagge.
+                            Altrettanto comodo e veloce è l'autobus. La biglietteria si trova sulla destra del molo di
+                            arrivo degli aliscafi. Prendere l'autobus "San Costanzo" dopo circa dieci minuti scendere
+                            alla fermata
+                            della Piazzetta" Due Golfi". Sempre a piedi continuare verso la montagna. Suite Time Villa
+                            la Pergola si trova sulla sinistra su Via Provinciale Anacapri 7,
                         </p>
                     </div>
                 </article>
@@ -75,43 +102,46 @@
     </section>
     <section class="mt-136" data-aos="fade-up">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.6098477795636!2d14.234158515651854!3d40.55020805543414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b79d39f5ba52f%3A0xfd3a1f80b81b07ef!2sVilla+La+Pergola!5e0!3m2!1sit!2sit!4v1555057779064!5m2!1sit!2sit"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17149.459381410095!2d14.218684011139178!3d40.54987875323862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b79d39f5ba52f%3A0xfd3a1f80b81b07ef!2sVilla+La+Pergola!5e0!3m2!1sit!2sit!4v1558603228596!5m2!1sit!2sit"
             width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
     <section class="container" data-aos="fade-up">
         <header>
             <h2>PER MAGGIORI INFORMAZIONI</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, quaerat laborum laboriosam nostrum
-                quibusdam eaque temporibus, provident quasi sapiente culpa voluptatibus magni pariatur expedita
-                excepturi. Sequi quasi cupiditate atque nostrum.</p>
+            <p>Se hai domande non esitare a contattarci compilando il modulo sottostante. Ci metteremo al più presto in
+                contatto con te. Altrimenti puoi chiamarci oppure venire a trovarci.</p>
         </header>
-        <form action="">
+        <form action="https://formspree.io/info@suitetime.house" method="POST">
             <div class="formGroup">
-                <input type="text" placeholder="name">
+                <input type="text" placeholder="name" name="name">
             </div>
             <div class="formGroup">
-                <input type="email" placeholder="e-mail">
+                <input type="email" placeholder="e-mail" name="email">
             </div>
             <div class="formGroup">
-                <textarea name="" cols="30" rows="10" placeholder="messaggio"></textarea>
+                <textarea cols="30" rows="10" placeholder="messaggio" name="message"></textarea>
             </div>
-            <button>invia</button>
+            <button type="submit">invia</button>
         </form>
 
         <nav class="social">
-            <a href=""><img src="assets/facebook-icon.svg" alt=""></a>
-            <a href=""><img src="assets/instagram-icon.svg" alt=""></a>
+            <a href="https://www.facebook.com/suitetimecollection" target="_blank"><img src="assets/facebook-icon.svg"
+                    alt=""></a>
+            <a href="https://www.instagram.com/suitetime_collection/?hl=it" target="_blank"><img
+                    src="assets/instagram-icon.svg" alt=""></a>
         </nav>
     </section>
-    <footer id="mainFooter">
-        <img src="assets/footer_logo.svg" alt="">
-        <address>
-            081 18544028 -info@suitetime.house<br>
-            Via Provinciale Anacapri 7 "Due Golfi" 80076 Capri (NA)
+    <footer itemscope itemtype="http://schema.org/WPFooter" id="mainFooter">
+        <img itemprop="logo" src="assets/footer_logo.svg" alt="">
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="postalCode">081 18544028 -info@suitetime.house</span><br>
+            <span itemprop="streetAddress">Via Provinciale Anacapri 7 - 80076 Capri (NA)</span>
+            <span itemprop="identifier">&ensp;P.IVA 08575691210</span>
         </address>
     </footer>
 
     <!-- app -->
+    <script src="app/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

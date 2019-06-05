@@ -3,6 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description"
+        content="Suite Time Villa La Pergola è una deliziosa dimora situata a CAPRI. Costruita agli inizi dell'800 e rinnovata di recente - PRENOTA LA TUA VACANZA.">
+    <meta name="keywords"
+        content="suite time capri villa la pergola, Villa la Pergola, Bad & breakfast, b&b, b&b a Capri, affittacamere, Guest Rooms&Houses, Capri, Isola di Capri, La Pergola, Villa, Vacanze a Capri, la pergola capri, guest house capri">
+    <meta name="author" content="Stefano Imparato">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Suite Time</title>
@@ -10,22 +15,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-    <header id="mainHeader">
-        <nav id="mainNavbar">
+<body itemscope itemtype="http://schema.org/WebPage">
+    <header id="mainHeader" itemscope itemtype="http://schema.org/WPHeader">
+        <nav id="mainNavbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <ul>
                 <li>
-                    <a href="index.html">home</a>
+                    <a itemprop="url" href="index.html">home</a>
                 </li>
                 <li>
-                    <a href="rooms.html">camere</a>
+                    <a itemprop="url" href="rooms.html">camere</a>
                 </li>
-                <li><img src="assets/logo.svg" alt=""></li>
+                <li itemscope itemtype="http://schema.org/Brand"><img itemprop="logo" src="assets/logo.svg"
+                        alt="hotel logo"></li>
                 <li>
-                    <a href="gallery.html">gallery</a>
+                    <a itemprop="url" href="gallery.html">gallery</a>
                 </li>
                 <li>
-                    <a href="contacts.html">contatti</a>
+                    <a itemprop="url" href="contacts.html">contatti</a>
                 </li>
             </ul>
             <div class="mobile">
@@ -34,35 +40,38 @@
                 <div class="nav">
                     <ul>
                         <li>
-                            <a href="index.html">home</a>
+                            <a itemprop="url" href="index.html">home</a>
                         </li>
                         <li>
-                            <a href="rooms.html">camere</a>
+                            <a itemprop="url" href="rooms.html">camere</a>
                         </li>
                         <li>
-                            <a href="gallery.html">gallery</a>
+                            <a itemprop="url" href="gallery.html">gallery</a>
                         </li>
                         <li>
-                            <a href="contacts.html">contatti</a>
+                            <a itemprop="url" href="contacts.html">contatti</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <video crossorigin="anonymous" poster="assets/hero_img.jpg" autoplay loop muted>
-            <source src="assets/hero.mp4" type="video/mp4">
-        </video>
+        <!-- <figure>
+            <video itemprop="video" crossorigin="anonymous" poster="assets/hero_img.jpg" autoplay loop muted>
+                <source src="assets/video/hero.mp4" type="video/mp4">
+            </video>
+        </figure> -->
+        <img itemprop="photo" src="assets/photo/hero.jpg" alt="" class="hero">
         <div class="content">
-            <h1>Suite Time</h1>
-            <p>Ospitalità autentica</p>
-            <button>prenota</button>
+            <h1 itemprop="name">Suite Time</h1>
+            <p itemprop="description"><strong>Villa la Pergola</strong> Ospitalità autentica a Capri</p>
+            <a itemprop="url" href="https://book.ermeshotels.com/#/hotel/2437/channel/959/language/2/rooms"
+                target="blank" class="btn">prenota</a>
         </div>
-        <img class="squares" src="assets/rombs.svg" alt="">
     </header>
+    <img class="squares" src="assets/rombs.svg" alt="">
     <main class="container">
         <p class="mainTitle">
-            <strong>Valorizziamo</strong> i tuoi momenti di svago con tutta l’attenzione
-            che questi preziosi momenti <strong>meritano</strong>
+            <strong>Suite Time</strong> - Guest Rooms&Houses, per i tuoi momenti di svago e relax a <strong>Capri</strong>
         </p>
         <div class="row mt-64">
             <div class="col m4 s12" data-aos="fade-right">
@@ -90,7 +99,7 @@
                             Location
                         </h5>
                         <p>
-                            I maggiori luoghi di interesse di Capri
+                            Nei pressi dei luoghi più visitati dell'isola di Capri
                         </p>
                     </div>
                 </article>
@@ -112,15 +121,16 @@
             </div>
         </div>
     </main>
-    <section class="container">
+    <section class="container" itemscope itemtype="http://schema.org/BedAndBreakfast">
         <header>
-            <h2>LA PERGOLA E SUITE GARDEN</h2>
-            <p>Suitetime Villa la pergola, costruita agli inizi dell’800 e rinnovata completamente di recente, conserva
+            <h2 itemprop="name">LA PERGOLA E SUITE GARDEN</h2>
+            <p itemprop="description">Suitetime Villa la pergola, costruita agli inizi dell’800 e rinnovata
+                completamente di recente, conserva
                 i tratti tipici delle tipiche ville di Capri.</p>
         </header>
-        <div class="slide" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+        <div class="slide">
             <figure class="col m8 s12" data-aos="fade-up">
-                <img src="assets/slide_1.jpg" class="res" itemprop="photo" alt="la pergola">
+                <img src="assets/photo/home_reception.png" class="res" itemprop="photo" alt="la pergola">
             </figure>
             <div class="col m4 s12" data-aos="fade-left">
                 <article class="card">
@@ -130,7 +140,7 @@
                 </article>
             </div>
         </div>
-        <div class="slide" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+        <div class="slide">
             <div class="col m4 s12" data-aos="fade-up">
                 <article class="card">
                     <p itemprop="description">Le camere e le suite sono tutte indipendenti e dotate di ogni comfort con
@@ -140,12 +150,12 @@
                 </article>
             </div>
             <figure class="col m8 s12" data-aos="fade-left">
-                <img src="assets/slide_2.jpg" class="res" itemprop="photo" alt="la Pergola">
+                <img src="assets/photo/home_room.jpg" class="res" itemprop="photo" alt="la Pergola">
             </figure>
         </div>
-        <div class="slide" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+        <div class="slide">
             <figure class="col m8 s12" data-aos="fade-up">
-                <img src="assets/slide_3.jpg" class="res" itemprop="photo" alt="la Pergola">
+                <img src="assets/photo/home_garden.png" class="res" itemprop="photo" alt="la Pergola">
             </figure>
             <div class="col m4 s12" data-aos="fade-left">
                 <article class="card">
@@ -156,40 +166,50 @@
             </div>
         </div>
     </section>
-    <section class="container">
+    <section class="container" itemscope itemtype="http://schema.org/ImageGallery">
         <header>
-            <h2>gallery</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae ab voluptatum minus, eius libero in
-                deleniti.</p>
+            <h2 itemprop="name">gallery</h2>
+            <p itemprop="description">Chiunque veda Capri non può non restarne colpito, tanto è espressiva e toccante la
+                sua sorprendente bellezza
+                <br>
+                <strong>Suite Time Villa la Pergola</strong>
+            </p>
         </header>
-        <div class="gallery" itemscope itemtype="http://schema.org/HotelRoom http://schema.org/Product">
-            <figure class="g1" data-aos="fade-down">
-                <img src="assets/g-1.jpg" itemprop="photo" alt="">
-                <span>Corridoio</span>
+        <div class="gallery">
+            <figure class="g1" data-aos="fade-down" itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <img itemprop="thumbnail" src="assets/photo/g-1.jpg" alt="">
+                <figcaption itemprop="caption">Giardino</figcaption>
             </figure>
-            <figure class="g2" data-aos="fade-up">
-                <img src="assets/g-2.jpg" itemprop="photo" alt="">
-                <span>Giardino</span>
+            <figure class="g2" data-aos="fade-up" itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <img itemprop="thumbnail" src="assets/photo/g-2.jpg" alt="">
+                <figcaption itemprop="caption">Terrazza</figcaption>
             </figure>
-            <figure class="g3" data-aos="fade-down">
-                <img src="assets/g-3.jpg" itemprop="photo" alt="">
-                <span>Veranda</span>
+            <figure class="g3" data-aos="fade-down" itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <img itemprop="thumbnail" src="assets/photo/g-3.jpg" alt="">
+                <figcaption itemprop="caption">Vista Giardino</figcaption>
             </figure>
-            <figure class="g4" data-aos="fade-up">
-                <img src="assets/g-4.jpg" itemprop="photo" alt="">
-                <span>Scale</span>
+            <figure class="g4" data-aos="fade-up" itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <img itemprop="thumbnail" src="assets/photo/g-4.jpg" alt="">
+                <figcaption itemprop="caption">Reception</figcaption>
             </figure>
-            <figure class="g5" data-aos="fade-right">
-                <img src="assets/g-5.jpg" itemprop="photo" alt="">
-                <span>Living</span>
+            <figure class="g5" data-aos="fade-right" itemprop="image" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <img itemprop="thumbnail" src="assets/photo/g-5.jpg" alt="">
+                <figcaption itemprop="caption">Reception</figcaption>
             </figure>
-            <figure class="g6" data-aos="fade-up">
-                <img src="assets/g-6.jpg" itemprop="photo" alt="">
-                <span>Piazzetta</span>
+            <figure class="g6" data-aos="fade-up" itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <img itemprop="thumbnail" src="assets/photo/g-6.jpg" alt="">
+                <figcaption itemprop="caption">Camera Deluxe</figcaption>
             </figure>
-            <figure class="g7" data-aos="fade-left">
-                <img src="assets/g-7.jpg" itemprop="photo" alt="">
-                <span>Balconata</span>
+            <figure class="g7" data-aos="fade-left" itemprop="associatedMedia" itemscope
+                itemtype="http://schema.org/ImageObject">
+                <img itemprop="thumbnail" src="assets/photo/g-7.jpg" alt="">
+                <figcaption itemprop="caption">Balconata</figcaption>
             </figure>
         </div>
     </section>
@@ -206,16 +226,17 @@
             </figure>
         </div>
     </section>
-    <footer id="mainFooter">
-        <img src="assets/footer_logo.svg" alt="">
-        <address>
-            081 18544028 -info@suitetime.house<br>
-            Via Provinciale Anacapri 7 "Due Golfi" 80076 Capri (NA)
+    <footer itemscope itemtype="http://schema.org/WPFooter" id="mainFooter">
+        <img itemprop="image" src="assets/footer_logo.svg" alt="">
+        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="postalCode">081 18544028 -info@suitetime.house</span><br>
+            <span itemprop="streetAddress">Via Provinciale Anacapri 7 - 80076 Capri (NA)</span>
+            <span itemprop="identifier">&ensp;P.IVA 08575691210</span>
         </address>
     </footer>
 
     <!-- app -->
-    <script src="app/ui.js"></script>
+    <script src="app/nav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

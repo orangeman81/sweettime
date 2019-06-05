@@ -39,9 +39,12 @@ button,
 
 .roomCard,
 form {
-    button {
+
+    button,
+    .btn {
         width: 100%;
         border: none;
+        box-sizing: border-box;
         background: $secondary;
 
         &:hover {
